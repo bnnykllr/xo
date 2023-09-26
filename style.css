@@ -1,0 +1,63 @@
+:root {
+    /* colors */
+    --dark : rgb(10,10,10);
+    --light: rgb(180,180,180)
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: monospace;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+h1 {
+    text-align: center;
+}
+
+.main {
+    padding: 20px;
+    border: 1px solid var(--light)
+}
+
+#game {
+    border: 1px solid var(--light);
+}
+
+.block {
+    position: fixed;
+    display: grid;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+}
+
+.block div {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+button {
+    font-size: 24px;
+    border: 0;
+    background-color: var(--light);
+    outline: 2px solid var(--light);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
