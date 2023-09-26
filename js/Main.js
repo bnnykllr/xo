@@ -10,7 +10,7 @@ class Main {
         
         this.update()
     }
-
+    //
     static popUp() {
         let block = document.createElement('div');
         block.className = 'block' //  [[x is won][btn: restart]]
